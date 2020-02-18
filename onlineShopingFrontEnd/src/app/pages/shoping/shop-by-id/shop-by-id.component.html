@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="shopRow">
+    <h2>{{shop.shopName}}</h2>
+    <h4>{{shop.contactNo}}  {{shop.address}}</h4>
+  
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let phoneProduct of phoneProducts" id={{phoneProduct.id}}>
+    <nb-card size="medium">
+      <div class="picture" style.background-image="url('/assets/images/mobile/{{phoneProduct.phoneProduct.imageUrl}}')"></div>
+       
+      <div class="details" >
+        <div class="brand">{{phoneProduct.phoneProduct.phoneType.brand.brandName}} </div>
+        <div class="model">   {{phoneProduct.phoneProduct.phoneType.model}}</div>
+        
+        <div class="price"><p>Rs. {{phoneProduct.price}}</p></div>
+        
+
+         <div class="description">
+         
+           
+        </div>
+      </div>
+    </nb-card>
+  </div>
+</div>
+<ul>
+
+  
+

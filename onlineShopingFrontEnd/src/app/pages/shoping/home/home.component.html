@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let phoneProductShop of phoneProductShops" id={{phoneProductShop.id}}>
+    <nb-card size="medium">
+      <div class="picture" style.background-image="url('/assets/images/mobile/{{phoneProductShop.phoneProduct.imageUrl}}')"></div>
+       
+      <div class="details" >
+        <div class="brand">{{phoneProductShop.phoneProduct.phoneType.brand.brandName}} </div>
+        <div class="model">   {{phoneProductShop.phoneProduct.phoneType.model}}</div>
+        
+        <div class="price"><p>Rs. {{phoneProductShop.price}}</p></div>
+        
+
+         <div class="description">
+          <div class="shop" (click)="redirect(phoneProductShop.shop.id)">
+            {{phoneProductShop.shop.shopName}}
+            <p><i class="fas fa-phone"></i>
+            ({{phoneProductShop.shop.contactNo}})</p></div>
+           <p><i class="far fa-address-card"></i>  {{phoneProductShop.shop.address}}</p> 
+        </div>
+      </div>
+    </nb-card>
+  </div>
+
+</div>

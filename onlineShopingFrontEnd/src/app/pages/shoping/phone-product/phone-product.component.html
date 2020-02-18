@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let phonePrduct of phoneProducts">
+    <nb-card size="medium">
+        <div class="details" id={{phonePrduct.id}}>
+        <div class="h3">{{phonePrduct.id}}</div>
+         <div class="description">
+          {{phonePrduct.spec}}
+        </div>
+      </div>
+
+      <nb-card-footer>
+       
+      </nb-card-footer>
+    </nb-card>
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+<button nbButton>Open window form</button>
+<div class="row">
+  <div class="col-md-4" *ngFor="let shop of shops">
+    <nb-card size="medium">
+      <div class="picture" style.background-image="url('{{shop.imageUrl}}')"></div>
+       
+      <div class="details" id={{shop.id}}>
+        <div class="h3">{{shop.shopName}}</div>
+        <div class="h4">{{shop.contactNo}}</div>
+        <div class="h6">{{shop.address}}</div>
+         <div class="description">
+          UI Kitten is a framework that contains a set of commonly used UI components styled in a similar way. The most
+          
+        </div>
+      </div>
+
+      <nb-card-footer>
+       
+      </nb-card-footer>
+    </nb-card>
+  </div>
+
+</div>

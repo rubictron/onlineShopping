@@ -1,0 +1,80 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+ 
+
+  .picture {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-top-left-radius: nb-theme(card-border-radius);
+    border-top-right-radius: nb-theme(card-border-radius);
+    flex: 1;
+  }
+
+  .model{
+      color : rgb(4, 48, 131);
+      font-size: 2.5em;
+      font-weight: bold;
+      display: inline;
+  }
+
+  .brand{
+      color: rgb(8, 8, 243);
+      font-size: 1.5em;
+      display: inline;
+  }
+
+  .price p{
+    font-size: 2em;
+    color: red;
+      text-align: right;
+  }
+
+  .price{
+    margin-top: 20px;
+  }
+
+  .details {
+    padding: nb-theme(card-padding);
+  }
+
+  .shop{
+      color: rgb(132, 0, 255);
+      font-size: 1.5em;
+  }
+
+  .shop p{
+    display: inline;
+    color: black;
+    font-size: 1em;
+    font-style: italic;
+}
+
+
+
+  .description {
+    text-align: justify;
+  }
+
+  nb-card-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .link-icon {
+    font-size: 1.75rem;
+  }
+
+  nb-icon {
+    font-size: 1.55rem;
+
+    ::ng-deep svg {
+      vertical-align: top;
+    }
+  }
+
+  
+}
